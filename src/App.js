@@ -12,7 +12,6 @@ export default function App() {
       imgURL={item.imgURL}
       title={item.title}
       secondTitle={item.secondTitle}
-      price={item.price}
       key={index}
       id={index}
     />

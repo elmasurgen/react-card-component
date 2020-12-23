@@ -5,7 +5,7 @@ function Card(props) {
   );
 
   const clickHandler = event => {
-    event.target.name == "increase" ? setLike(like + 1) : setLike(like - 1);
+  setLike(like + 1) ;
   };
 
   localStorage.setItem(props.id, like);
@@ -27,16 +27,8 @@ function Card(props) {
               >
                 <i className="fas fa-heart" />
               </button>
-              <button
-                name="decrease"
-                onClick={clickHandler}
-                type="button"
-                className="btn btn-sm btn-outline-secondary"
-              >
-                <i className="fas fa-heart-broken" />
-              </button>
             </div>
-            <small class="text-muted">{like} Like</small>
+            <small className="text-muted">{like} Like</small>
           </div>
         </div>
       </div>
